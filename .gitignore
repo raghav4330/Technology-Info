@@ -1,0 +1,56 @@
+# ==========================================
+# 1. Global Git Repository Exclusions
+# ==========================================
+# Blocks all inner .git folders recursively to prevent submodule errors
+**/.git/
+
+# ==========================================
+# 2. Python Exclusions
+# ==========================================
+# Your specific parent folder containing multiple virtual environments
+vENV/
+
+# Standard Python virtual environments (just in case you have others)
+venv/
+.venv/
+ENV/
+
+# Python caching and compilation files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.poetry/
+.pdm/
+
+# ==========================================
+# 3. Java Exclusions
+# ==========================================
+# Compiled classes and build outputs
+*.class
+*.log
+target/
+build/
+.gradle/
+
+# Java archive files
+*.jar
+*.war
+*.ear
+
+# ==========================================
+# 4. System & IDE Exclusions (VS Code / IntelliJ)
+# ==========================================
+.vscode/
+.idea/
+*.iml
+.metadata/
+.classpath
+.project
+.settings/
+
+# OS-specific hidden files
+.DS_Store
+Thumbs.db
+
